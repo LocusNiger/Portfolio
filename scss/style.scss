@@ -74,13 +74,18 @@ footer {
   display: flex;
   width: 100%;
   height: 20vh;
-  border: 1px solid red;
   padding: 2.7rem;
   justify-content: space-between;
+  backdrop-filter: blur(1.6rem) saturate(180%);
+  -webkit-backdrop-filter: blur(1.6rem) saturate(180%);
+  background-color: rgba(16, 22, 46, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.125);
   .footer-sections {
     height: auto;
     width: 100%;
-    border: 1px solid white;
+    li {
+      margin: 0.5rem 0;
+    }
     a {
       font-weight: 300;
       color: white;
@@ -89,12 +94,11 @@ footer {
     }
   }
   .footer-social {
-    border: 1px solid white;
     height: auto;
     width: 100%;
     text-align: right;
     .linea {
-      margin-left: 80%;
+      margin-left: 75%;
     }
     .footer-social__icons {
       width: auto;
@@ -138,6 +142,7 @@ footer {
   flex-direction: column;
   width: 100vw;
   height: 45vh;
+  margin-bottom: 1rem;
   .work-title-container {
     /* Contenedor de los 2 <p> */
     display: flex;
@@ -167,8 +172,8 @@ footer {
       backdrop-filter: blur(1.6rem) saturate(180%);
       -webkit-backdrop-filter: blur(1.6rem) saturate(180%);
       background-color: rgba(16, 22, 46, 0.75);
-      border-radius: 1.2rem;
       border: 1px solid rgba(255, 255, 255, 0.125);
+      border-radius: 1.2rem;
       width: 40%;
       height: 80%;
     }
