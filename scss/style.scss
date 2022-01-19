@@ -72,15 +72,15 @@ nav {
 /* Pie de página */
 footer {
   display: flex;
-  flex-direction: column;
   width: 100%;
-  height: 30vh;
+  height: 20vh;
   border: 1px solid red;
   padding: 2.7rem;
-  justify-content: space-around;
+  justify-content: space-between;
   .footer-sections {
     height: auto;
     width: 100%;
+    border: 1px solid white;
     a {
       font-weight: 300;
       color: white;
@@ -89,12 +89,18 @@ footer {
     }
   }
   .footer-social {
+    border: 1px solid white;
     height: auto;
     width: 100%;
+    text-align: right;
+    .linea {
+      margin-left: 80%;
+    }
     .footer-social__icons {
       width: auto;
       height: 2rem;
       i {
+        margin-top: 0.5rem;
         color: white;
         font-size: 2rem;
         margin-right: 1rem;
