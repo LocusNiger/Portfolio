@@ -13,12 +13,27 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+.linea {
+  border-top: 1px solid white;
+  height: 1px;
+  max-width: 20%;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.footer-title {
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
 body {
   background-color: #0a1526;
 }
 
+/* Navbar */
 nav {
-  /* Nav */
   height: 7.5rem;
   width: 100%;
   background-color: white;
@@ -99,8 +114,55 @@ nav #check:checked ~ .nav-list {
 
 nav #check:checked ~ .nav-list li {
   display: block;
+  top: 0;
 }
 
+/* Pie de página */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 30vh;
+  border: 1px solid red;
+  padding: 2.7rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .footer-sections {
+  height: auto;
+  width: 100%;
+}
+
+footer .footer-sections a {
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+footer .footer-social {
+  height: auto;
+  width: 100%;
+}
+
+footer .footer-social .footer-social__icons {
+  width: auto;
+  height: 2rem;
+}
+
+footer .footer-social .footer-social__icons i {
+  color: white;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+/* INDEX */
 .title-container {
   /* Contenedor de los titulos al inicio de la página */
   display: -webkit-box;
@@ -142,7 +204,7 @@ nav #check:checked ~ .nav-list li {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100vw;
-  height: 60vh;
+  height: 45vh;
 }
 
 .work-container .work-title-container {
@@ -182,7 +244,7 @@ nav #check:checked ~ .nav-list li {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 60%;
+  height: 36vh;
 }
 
 .work-container .cards-container .card {
