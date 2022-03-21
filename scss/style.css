@@ -21,6 +21,28 @@ body {
   margin: 10px 0;
 }
 
+.title-container h1,
+.title-container h2,
+.title-container h3 {
+  color: white;
+  font-weight: 500;
+}
+
+.title-container h1 {
+  font-size: 4.2rem;
+}
+
+.title-container h2,
+.title-container h3 {
+  font-size: 3.2rem;
+}
+
+.title-container p {
+  color: #9ca3af;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
 .footer-title {
   font-size: 1.6rem;
   color: white;
@@ -132,6 +154,7 @@ footer {
   -webkit-backdrop-filter: blur(1.6rem) saturate(180%);
   background-color: rgba(16, 22, 46, 0.75);
   border: 1px solid rgba(255, 255, 255, 0.125);
+  display: none;
 }
 
 footer .footer-sections {
@@ -183,25 +206,14 @@ footer .footer-social .footer-social__icons i {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100vw;
-  height: 40vh;
+  height: 30vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-left: 3rem;
-}
-
-.title-container h1,
-.title-container h2,
-.title-container h3 {
-  color: white;
-  font-size: 4rem;
-  font-weight: 500;
-}
-
-.title-container p {
-  color: white;
-  font-size: 2.5rem;
-  font-weight: 300;
 }
 
 .work-container {
@@ -219,43 +231,44 @@ footer .footer-social .footer-social__icons i {
 }
 
 .work-container .work-title-container {
-  /* Contenedor de los 2 <p> */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 10%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  gap: 2rem;
 }
 
 .work-container .work-title-container .first-p {
-  color: white;
-  font-weight: 300;
-  font-size: 2rem;
-}
-
-.work-container .work-title-container .second-p a {
+  text-align: center;
   color: #1199fa;
   font-weight: 500;
-  font-size: 2rem;
-  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.work-container .work-title-container .code-icon {
+  width: 2.5rem;
 }
 
 .work-container .cards-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  height: 36vh;
+  margin-top: 3rem;
+  display: -ms-grid;
+  display: grid;
+  height: auto;
+  width: auto;
+  -ms-grid-columns: 320px;
+      grid-template-columns: 320px;
+  -ms-grid-rows: (525px)[4];
+      grid-template-rows: repeat(4, 525px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem 0;
 }
 
 .work-container .cards-container .card {
@@ -264,8 +277,104 @@ footer .footer-social .footer-social__icons i {
   background-color: rgba(16, 22, 46, 0.75);
   border: 1px solid rgba(255, 255, 255, 0.125);
   border-radius: 1.2rem;
-  width: 40%;
-  height: 80%;
+  -webkit-box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 500px;
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
+  gap: 2rem;
+}
+
+.work-container .cards-container .card img {
+  width: 28rem;
+  height: 17.6rem;
+  border-radius: 1rem;
+  background-color: black;
+}
+
+.work-container .cards-container .card .project-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.work-container .cards-container .card .project-description {
+  color: #9ca3af;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.work-container .cards-container .card .project-technologies {
+  width: 28rem;
+}
+
+.work-container .cards-container .card .project-technologies .project-technologies--title {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.work-container .cards-container .card .project-technologies .project-technologies--buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.work-container .cards-container .card .project-technologies .project-technologies--buttons .project-technologies--button {
+  color: #9ca3af;
+  display: inline-block;
+  font-size: 1.6rem;
+  height: 3rem;
+  font-weight: 300;
+  background-color: #0a1526;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.work-container .cards-container .card .project-buttons {
+  width: 28rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work-container .cards-container .card .project-buttons .deploy-button {
+  padding: 0.5rem;
+  background-color: #9ca3af;
+  color: #0a1526;
+  margin: 0 2rem;
+  font-size: 1.6rem;
+  height: 3rem;
+}
+
+.work-container .cards-container .card .project-buttons .fa-github {
+  font-size: 6rem;
+  color: #9ca3af;
 }
 
 @media only screen and (min-width: 900px) {
