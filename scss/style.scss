@@ -3,12 +3,12 @@
 @import "typo";
 
 body {
-  background-color: #f8bc4d;
+  background-color: #f4f4f5;
 }
 
 /* Navbar */
 nav {
-  height: 7.5rem;
+  height: 16.5rem;
   width: 100%;
   background-color: #e23f26;
   display: flex;
@@ -120,10 +120,10 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 4.5rem;
+  padding-left: 3.5rem;
   padding-top: 2rem;
   width: 100%;
-  height: 25rem;
+  height: 30rem;
   margin-bottom: 3rem;
   background-color: #e23f26;
 }
@@ -142,18 +142,19 @@ footer {
     width: 32rem;
     padding: 1rem;
     gap: 1rem;
-    border: 1px solid #152f69;
-    box-shadow: 0.5rem 0.5rem #152f69;
-    background-color: #f8bc4d;
+    border: 1px solid #000;
+    box-shadow: 0.5rem 0.5rem #000;
+    background-color: #f4f4f5;
+    border-radius: 0.4rem;
 
     .first-p {
       text-align: center;
-      color: #152f69;
+      color: #000;
       font-weight: 500;
       font-size: 3rem;
     }
     .fa-code {
-      color: #152f69;
+      color: #000;
       font-size: 2.5rem;
     }
   }
@@ -163,32 +164,33 @@ footer {
     height: auto;
     width: auto;
     grid-template-columns: 320px;
-    grid-template-rows: repeat(4, 525px);
+    grid-template-rows: repeat(4, 530px);
     justify-content: center;
     gap: 3rem 0;
     .card {
-      border: 1px solid #152f69;
+      border: 1px solid #000;
       border-radius: 0.4rem;
       width: 100%;
-      height: 500px;
+      height: 515px;
       justify-self: center;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 1.5rem;
+      padding: 2.5rem 1.5rem;
       gap: 2rem;
       img {
         width: 28rem;
         height: 17.6rem;
+        object-fit: cover;
         background-color: black;
       }
       .project-title {
-        color: #152f69;
+        color: #000;
         font-size: 2.5rem;
         font-weight: 500;
       }
       .project-description {
-        color: #152f69;
+        color: #000;
         font-size: 1.6rem;
         font-weight: 300;
         text-align: justify;
@@ -197,7 +199,7 @@ footer {
       .project-technologies {
         width: 28rem;
         .project-technologies--title {
-          color: #152f69;
+          color: #000;
           text-align: center;
           font-size: 2.5rem;
           font-weight: 500;
@@ -208,14 +210,14 @@ footer {
           gap: 2rem;
           margin-top: 2rem;
           .project-technologies--button {
-            color: #152f69;
+            color: #000;
             display: inline-block;
             font-size: 1.6rem;
             height: 3rem;
             font-weight: 300;
             padding: 0.5rem;
             text-align: center;
-            border: 1px solid #152f69;
+            border: 1px solid #000;
             border-radius: 0.4em;
           }
         }
@@ -229,17 +231,21 @@ footer {
         align-items: center;
         .deploy-button {
           padding: 0.5rem;
-          color: #152f69;
           margin: 0 2rem;
-          font-size: 1.6rem;
           height: 3rem;
-          border: 1px solid #152f69;
+          border: 1px solid #000;
           border-radius: 0.4em;
           box-shadow: 0.2rem 0.2rem;
+          font-size: 1.6rem;
+          a {
+            font-size: 1.6rem;
+            color: #000;
+            text-decoration: none;
+          }
         }
         .fa-github {
           font-size: 6rem;
-          color: #152f69;
+          color: #000;
         }
       }
     }
