@@ -48,7 +48,7 @@ body {
 }
 
 .title-container span {
-  color: #cfc1e0;
+  color: #75aadb;
   font-size: 2.5rem;
 }
 
@@ -65,7 +65,7 @@ body {
 
 /* Navbar */
 nav {
-  height: 16.5rem;
+  height: 8.5rem;
   width: 100%;
   background-color: #e23f26;
   display: -webkit-box;
@@ -220,9 +220,10 @@ footer .footer-social .footer-social__icons i {
   padding-left: 3.5rem;
   padding-top: 2rem;
   width: 100%;
-  height: 30rem;
+  height: 32rem;
   margin-bottom: 3rem;
-  background-color: #e23f26;
+  background: url(../img/wave-background-titles.png) fixed no-repeat;
+  top: 0;
 }
 
 .work-container {
@@ -305,7 +306,7 @@ footer .footer-social .footer-social__icons i {
       -ms-flex-align: center;
           align-items: center;
   padding: 2.5rem 1.5rem;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .work-container .cards-container .card img {
