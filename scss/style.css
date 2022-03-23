@@ -28,7 +28,7 @@ body {
 .title-container h1,
 .title-container h2,
 .title-container h3 {
-  color: #e4e966;
+  color: #000;
   font-weight: 500;
 }
 
@@ -42,13 +42,13 @@ body {
 }
 
 .title-container p {
-  color: #e4e966;
+  color: #000;
   font-size: 2.7rem;
   font-weight: 300;
 }
 
 .title-container span {
-  color: #75aadb;
+  color: #3d8bd4;
   font-size: 2.5rem;
 }
 
@@ -60,14 +60,13 @@ body {
 }
 
 body {
-  background-color: #f4f4f5;
+  background-color: #b2e0bd;
 }
 
 /* Navbar */
 nav {
   height: 8.5rem;
   width: 100%;
-  background-color: #e23f26;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,7 +90,7 @@ nav .logo-container .logo {
 }
 
 nav .nav-list {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 0vh;
   top: 7.5rem;
@@ -99,9 +98,6 @@ nav .nav-list {
   text-align: center;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  background-color: #e23f26;
 }
 
 nav .nav-list li {
@@ -113,14 +109,14 @@ nav .nav-list li {
 }
 
 nav .nav-list li a {
-  color: white;
+  color: black;
   font-size: 2rem;
   text-transform: uppercase;
 }
 
 nav .nav-list li a.active,
 nav .nav-list li a:hover {
-  color: #e4e966;
+  color: #000;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -128,7 +124,7 @@ nav .nav-list li a:hover {
 nav .hamburger-btn {
   display: block;
   font-size: 3rem;
-  color: #e4e966;
+  color: #000;
   float: right;
   line-height: 7.5rem;
   margin-right: 4rem;
@@ -220,9 +216,8 @@ footer .footer-social .footer-social__icons i {
   padding-left: 3.5rem;
   padding-top: 2rem;
   width: 100%;
-  height: 32rem;
+  height: 22rem;
   margin-bottom: 3rem;
-  background: url(../img/wave-background-titles.png) fixed no-repeat;
   top: 0;
 }
 
@@ -241,9 +236,21 @@ footer .footer-social .footer-social__icons i {
   width: 100vw;
   height: 45vh;
   margin-bottom: 1rem;
+  position: relative;
 }
 
 .work-container .work-title-container {
+  width: 32rem;
+  height: 9.6rem;
+  border: 3px solid #000;
+  background-color: #fec572;
+  border-radius: 0.4rem;
+  position: relative;
+  left: 7px;
+  top: 7px;
+}
+
+.work-container .work-title-container .work-title-texts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,24 +258,26 @@ footer .footer-social .footer-social__icons i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 32rem;
-  padding: 1rem;
   gap: 1rem;
-  border: 1px solid #000;
-  -webkit-box-shadow: 0.5rem 0.5rem #000;
-          box-shadow: 0.5rem 0.5rem #000;
-  background-color: #f4f4f5;
+  padding: 1rem;
+  width: 32rem;
+  height: 9.6rem;
+  background-color: #fefffe;
+  border: 3px solid black;
   border-radius: 0.4rem;
+  left: -14px;
+  top: -14px;
+  position: inherit;
 }
 
-.work-container .work-title-container .first-p {
+.work-container .work-title-container .work-title-texts .first-p {
   text-align: center;
   color: #000;
   font-weight: 500;
   font-size: 3rem;
 }
 
-.work-container .work-title-container .fa-code {
+.work-container .work-title-container .work-title-texts .fa-code {
   color: #000;
   font-size: 2.5rem;
 }
@@ -290,7 +299,7 @@ footer .footer-social .footer-social__icons i {
 }
 
 .work-container .cards-container .card {
-  border: 1px solid #000;
+  border: 3px solid #000;
   border-radius: 0.4rem;
   width: 100%;
   height: 515px;
@@ -307,6 +316,7 @@ footer .footer-social .footer-social__icons i {
           align-items: center;
   padding: 2.5rem 1.5rem;
   gap: 1.5rem;
+  background-color: #fefffe;
 }
 
 .work-container .cards-container .card img {
@@ -357,11 +367,11 @@ footer .footer-social .footer-social__icons i {
   display: inline-block;
   font-size: 1.6rem;
   height: 3rem;
-  font-weight: 300;
+  font-weight: 500;
   padding: 0.5rem;
   text-align: center;
-  border: 1px solid #000;
-  border-radius: 0.4em;
+  border: 2px solid #000;
+  border-radius: 0.4rem;
 }
 
 .work-container .cards-container .card .project-buttons {
@@ -382,11 +392,13 @@ footer .footer-social .footer-social__icons i {
   padding: 0.5rem;
   margin: 0 2rem;
   height: 3rem;
-  border: 1px solid #000;
+  border: 2px solid #000;
   border-radius: 0.4em;
-  -webkit-box-shadow: 0.2rem 0.2rem;
-          box-shadow: 0.2rem 0.2rem;
+  -webkit-box-shadow: 0.3rem 0.3rem;
+          box-shadow: 0.3rem 0.3rem;
+  font-weight: 500;
   font-size: 1.6rem;
+  background-color: #fec572;
 }
 
 .work-container .cards-container .card .project-buttons .deploy-button a {
