@@ -120,8 +120,9 @@ footer {
   padding-top: 2rem;
   width: 100%;
   height: 22rem;
-  margin-bottom: 3rem;
+  height: auto;
   top: 0;
+  margin-bottom: 10rem;
 }
 
 .work-container {
@@ -130,11 +131,9 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 45vh;
   margin-bottom: 1rem;
-  position: relative;
-
   .work-title-container {
+    /* TITULO "MY WORK" + ICONO */
     width: 32rem;
     height: 9.6rem;
     border: 3px solid #000;
@@ -174,15 +173,15 @@ footer {
     height: auto;
     width: auto;
     grid-template-columns: 320px;
-    grid-template-rows: repeat(4, 530px);
+    grid-template-rows: repeat(3, 530px);
     justify-content: center;
     gap: 3rem 0;
     .card {
       border: 3px solid #000;
-      border-radius: 0.4rem;
       width: 100%;
       height: 515px;
       justify-self: center;
+      border-radius: 0.4rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -262,6 +261,63 @@ footer {
           color: #000;
         }
       }
+    }
+  }
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .about-me-title {
+    width: 32rem;
+    height: 9.6rem;
+    border: 3px solid #000;
+    background-color: #6e96fa;
+    border-radius: 0.4rem;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    .about-me-title-texts {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+      width: 32rem;
+      height: 9.6rem;
+      background-color: #fefffe;
+      border: 3px solid black;
+      border-radius: 0.4rem;
+      left: -13px;
+      top: -13px;
+      position: inherit;
+      .first-p {
+        text-align: center;
+        color: #000;
+        font-weight: 500;
+        font-size: 3rem;
+      }
+      .fa-code {
+        color: #000;
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .about-me-card {
+    margin-top: 3rem;
+    width: 32rem;
+    padding: 2.5rem 1.5rem;
+    background-color: #fefffe;
+    justify-self: center;
+    border: 3px solid black;
+    border-radius: 0.4rem;
+    .about-me-text {
+      color: #000;
+      font-size: 1.6rem;
+      font-weight: 500;
+      text-align: justify;
+      margin-bottom: 1rem;
     }
   }
 }
