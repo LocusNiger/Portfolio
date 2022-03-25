@@ -72,11 +72,8 @@ footer {
   height: 20vh;
   padding: 2.7rem;
   justify-content: space-between;
-  backdrop-filter: blur(1.6rem) saturate(180%);
-  -webkit-backdrop-filter: blur(1.6rem) saturate(180%);
-  background-color: rgba(16, 22, 46, 0.75);
-  border: 1px solid rgba(255, 255, 255, 0.125);
-  display: none;
+  border-top: 3px solid black;
+  margin-top: 3rem;
   .footer-sections {
     height: auto;
     width: 100%;
@@ -85,9 +82,9 @@ footer {
     }
     a {
       font-weight: 300;
-      color: white;
+      color: black;
       text-decoration: none;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
     }
   }
   .footer-social {
@@ -102,7 +99,7 @@ footer {
       height: 2rem;
       i {
         margin-top: 0.5rem;
-        color: white;
+        color: black;
         font-size: 2rem;
         margin-right: 1rem;
       }
@@ -110,9 +107,8 @@ footer {
   }
 }
 
-/* INDEX */
+/* Contenedor de los titulos al inicio de la página */
 .title-container {
-  /* Contenedor de los titulos al inicio de la página */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -125,8 +121,8 @@ footer {
   margin-bottom: 10rem;
 }
 
+/* Proyectos */
 .work-container {
-  /* Trabajos */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -264,12 +260,12 @@ footer {
     }
   }
 }
-
+/* About me */
 .about-me-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  margin-bottom: 2rem;
   .about-me-title {
     width: 32rem;
     height: 9.6rem;
@@ -298,7 +294,7 @@ footer {
         font-weight: 500;
         font-size: 3rem;
       }
-      .fa-code {
+      .fa-id-badge {
         color: #000;
         font-size: 2.5rem;
       }
@@ -321,7 +317,110 @@ footer {
     }
   }
 }
+/* Skills */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
 
+  .skills-title {
+    width: 32rem;
+    height: 9.6rem;
+    border: 3px solid #000;
+    background-color: #bda0ea;
+    border-radius: 0.4rem;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    .skills-title-texts {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+      width: 32rem;
+      height: 9.6rem;
+      background-color: #fefffe;
+      border: 3px solid black;
+      border-radius: 0.4rem;
+      left: -13px;
+      top: -13px;
+      position: inherit;
+      .first-p {
+        text-align: center;
+        color: #000;
+        font-weight: 500;
+        font-size: 3rem;
+      }
+      .fa-laptop-code {
+        color: #000;
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .skills-card {
+    display: flex;
+    margin-top: 3rem;
+    width: 32rem;
+    padding: 2.5rem 1.5rem;
+    background-color: #fefffe;
+    border: 3px solid black;
+    border-radius: 0.4rem;
+    justify-content: space-around;
+    .skills-subcard {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .technologie {
+        color: #000;
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-align: justify;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.GIT-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .GIT-title {
+    width: 32rem;
+    height: 9.6rem;
+    border: 3px solid #000;
+    background-color: #d9ef54;
+    border-radius: 0.4rem;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    .GIT-title-texts {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+      width: 32rem;
+      height: 9.6rem;
+      background-color: #fefffe;
+      border: 3px solid black;
+      border-radius: 0.4rem;
+      left: -13px;
+      top: -13px;
+      position: inherit;
+      .first-p {
+        text-align: center;
+        color: #000;
+        font-weight: 500;
+        font-size: 3rem;
+      }
+      .fa-envelope-circle-check {
+        color: #000;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
 @media only screen and (min-width: 900px) {
   nav {
     height: 10rem;
