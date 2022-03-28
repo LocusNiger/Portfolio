@@ -76,6 +76,10 @@ body {
   background-color: #fefffe;
 }
 
+.GIT-card form button {
+  font-family: "Rubik", sans-serif;
+}
+
 body {
   background-color: #b2e0bd;
 }
@@ -595,6 +599,7 @@ footer .footer-social .footer-social__icons i {
   margin-bottom: 1rem;
 }
 
+/* Get in touch */
 .GIT-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -672,11 +677,29 @@ footer .footer-social .footer-social__icons i {
       justify-content: space-around;
 }
 
-.GIT-container .GIT-card .form-container form input {
+.GIT-container .GIT-card .form-container form label {
+  margin-bottom: 0.5rem;
+}
+
+.GIT-container .GIT-card .form-container form input,
+.GIT-container .GIT-card .form-container form textarea {
   margin-bottom: 1.3rem;
   border: 1px solid;
   border-color: #fefffe #fefffe #adacac #fefffe;
-  padding: 0.5rem 0;
+  padding: 0.2rem 0;
+}
+
+.GIT-container .GIT-card .form-container form button {
+  background-color: #fefffe;
+  border: 1px solid black;
+  border-radius: 0.4rem;
+  -webkit-box-shadow: 0.4rem 0.4rem;
+          box-shadow: 0.4rem 0.4rem;
+  width: 50%;
+  padding: 1rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 1.5rem;
 }
 
 @media only screen and (min-width: 900px) {
