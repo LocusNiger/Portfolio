@@ -71,6 +71,13 @@ body {
   font-size: 1.6rem;
 }
 
+.GIT-card form label,
+.GIT-card form textarea,
+.GIT-card form button,
+.GIT-card form input {
+  font-size: 1.4rem;
+}
+
 .GIT-card form input {
   font-family: "Rubik", sans-serif;
   background-color: #fefffe;
@@ -700,6 +707,13 @@ footer .footer-social .footer-social__icons i {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-top: 1.5rem;
+  -webkit-transform: translateY(-0.2em);
+          transform: translateY(-0.2em);
+}
+
+.GIT-container .GIT-card .form-container form button:active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 @media only screen and (min-width: 900px) {

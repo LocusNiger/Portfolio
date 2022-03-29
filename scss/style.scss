@@ -120,7 +120,6 @@ footer {
   top: 0;
   margin-bottom: 10rem;
 }
-
 /* Proyectos */
 .work-container {
   display: flex;
@@ -451,6 +450,10 @@ footer {
           padding: 1rem;
           align-self: flex-end;
           margin-top: 1.5rem;
+          transform: translateY(-0.2em);
+        }
+        button:active {
+          transform: translateY(0);
         }
       }
     }

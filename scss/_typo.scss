@@ -40,6 +40,12 @@
   form {
     font-weight: 500;
     font-size: 1.6rem;
+    label,
+    textarea,
+    button,
+    input {
+      font-size: 1.4rem;
+    }
     input {
       font-family: "Rubik", sans-serif;
       background-color: #fefffe;
