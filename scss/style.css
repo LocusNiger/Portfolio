@@ -187,13 +187,20 @@ footer .footer-social .linea {
 footer .footer-social .footer-social__icons {
   width: auto;
   height: 4rem;
-  border: 1px solid red;
 }
 
-footer .footer-social .footer-social__icons i {
+footer .footer-social .footer-social__icons .fa-github,
+footer .footer-social .footer-social__icons .fa-linkedin {
   margin-top: 0.5rem;
   color: black;
-  font-size: 2rem;
+  font-size: 4rem;
+  margin-left: 1rem;
+  background-color: white;
+  padding: 0.5rem;
+  border: 3px solid black;
+  border-radius: 0.4rem;
+  -webkit-box-shadow: 0.3rem 0.3rem black;
+          box-shadow: 0.3rem 0.3rem black;
 }
 
 /* Contenedor de los titulos al inicio de la página */

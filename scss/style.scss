@@ -69,11 +69,17 @@ footer {
     .footer-social__icons {
       width: auto;
       height: 4rem;
-      border: 1px solid red;
-      i {
+      .fa-github,
+      .fa-linkedin {
         margin-top: 0.5rem;
         color: black;
-        font-size: 2rem;
+        font-size: 4rem;
+        margin-left: 1rem;
+        background-color: white;
+        padding: 0.5rem;
+        border: 3px solid black;
+        border-radius: 0.4rem;
+        box-shadow: 0.3rem 0.3rem black;
       }
     }
   }
