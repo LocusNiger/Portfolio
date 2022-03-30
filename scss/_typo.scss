@@ -1,12 +1,8 @@
 .title-container {
-  h1,
   h2,
   h3 {
     color: #000;
     font-weight: 500;
-  }
-  h1 {
-    font-size: 5.7rem;
   }
   h2,
   h3 {
@@ -20,6 +16,14 @@
   span {
     color: #3d8bd4;
     font-size: 2.5rem;
+    background-color: white;
+    padding: 0.2rem;
+  }
+  .spanh1 {
+    color: #ed1302;
+    -webkit-text-stroke: 0.5px black;
+    font-size: 5.7rem;
+    background-color: #f77902;
   }
 }
 
