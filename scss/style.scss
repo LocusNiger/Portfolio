@@ -45,6 +45,7 @@ footer {
   justify-content: space-between;
   border-top: 3px solid black;
   margin-top: 3rem;
+  /* Links a secciones */
   .footer-sections {
     height: auto;
     width: 100%;
@@ -67,12 +68,12 @@ footer {
     }
     .footer-social__icons {
       width: auto;
-      height: 2rem;
+      height: 4rem;
+      border: 1px solid red;
       i {
         margin-top: 0.5rem;
         color: black;
         font-size: 2rem;
-        margin-right: 1rem;
       }
     }
   }

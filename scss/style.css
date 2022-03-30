@@ -155,6 +155,7 @@ footer {
           justify-content: space-between;
   border-top: 3px solid black;
   margin-top: 3rem;
+  /* Links a secciones */
 }
 
 footer .footer-sections {
@@ -185,14 +186,14 @@ footer .footer-social .linea {
 
 footer .footer-social .footer-social__icons {
   width: auto;
-  height: 2rem;
+  height: 4rem;
+  border: 1px solid red;
 }
 
 footer .footer-social .footer-social__icons i {
   margin-top: 0.5rem;
   color: black;
   font-size: 2rem;
-  margin-right: 1rem;
 }
 
 /* Contenedor de los titulos al inicio de la página */
