@@ -10,11 +10,11 @@
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .card .project-buttons button {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .linea {
@@ -33,7 +33,7 @@ body {
 
 .title-container h2,
 .title-container h3 {
-  font-size: 4.2rem;
+  font-size: 4rem;
 }
 
 .title-container p {
@@ -52,7 +52,7 @@ body {
 .title-container .spanh1 {
   color: black;
   -webkit-text-stroke: 0.5px black;
-  font-size: 5.7rem;
+  font-size: 5.2rem;
   background-color: #d9ef54;
 }
 
@@ -83,12 +83,12 @@ body {
 }
 
 .GIT-card form input {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Roboto Mono', monospace;
   background-color: #fefffe;
 }
 
 .GIT-card form button {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 body {
@@ -135,7 +135,7 @@ nav .sections-container {
 
 nav .sections-container .section-btn {
   color: black;
-  width: 21vw;
+  width: 27vw;
   font-weight: 500;
   font-size: 2.4rem;
   height: 5rem;
@@ -215,7 +215,7 @@ footer .footer-social .footer-social__icons .fa-linkedin {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-left: 3.5rem;
+  padding-left: 2rem;
   padding-top: 2rem;
   width: 100%;
   height: 22rem;
@@ -292,8 +292,8 @@ footer .footer-social .footer-social__icons .fa-linkedin {
   width: auto;
   -ms-grid-columns: 320px;
       grid-template-columns: 320px;
-  -ms-grid-rows: (530px)[3];
-      grid-template-rows: repeat(3, 530px);
+  -ms-grid-rows: (550px)[3];
+      grid-template-rows: repeat(3, 550px);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -303,7 +303,7 @@ footer .footer-social .footer-social__icons .fa-linkedin {
 .work-container .cards-container .card {
   border: 3px solid #000;
   width: 100%;
-  height: 515px;
+  height: 550px;
   justify-self: center;
   border-radius: 0.4rem;
   display: -webkit-box;
@@ -316,6 +316,9 @@ footer .footer-social .footer-social__icons .fa-linkedin {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 2.5rem 1.5rem;
   gap: 1.5rem;
   background-color: #fefffe;
@@ -368,7 +371,6 @@ footer .footer-social .footer-social__icons .fa-linkedin {
   color: #000;
   display: inline-block;
   font-size: 1.6rem;
-  height: 3rem;
   font-weight: 500;
   padding: 0.5rem;
   text-align: center;
@@ -400,7 +402,7 @@ footer .footer-social .footer-social__icons .fa-linkedin {
           box-shadow: 0.3rem 0.3rem;
   font-weight: 500;
   font-size: 1.6rem;
-  background-color: #fec572;
+  background-color: #fefffe;
 }
 
 .work-container .cards-container .card .project-buttons .deploy-button a {
