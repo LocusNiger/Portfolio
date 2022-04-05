@@ -29,10 +29,6 @@ body {
 .title-container h3 {
   color: #000;
   font-weight: 500;
-}
-
-.title-container h2,
-.title-container h3 {
   font-size: 4rem;
 }
 
@@ -54,6 +50,15 @@ body {
   -webkit-text-stroke: 0.5px black;
   font-size: 5.2rem;
   background-color: #d9ef54;
+}
+
+.work-container .first-p {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.work-container .fa-code {
+  font-size: 2.5rem;
 }
 
 .footer-title {
@@ -89,6 +94,36 @@ body {
 
 .GIT-card form button {
   font-family: 'Roboto Mono', monospace;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .title-container h2, .title-container h3 {
+    font-size: 5rem;
+  }
+  .title-container p {
+    font-size: 4rem;
+  }
+  .title-container span {
+    font-size: 3.2rem;
+  }
+  .work-container .first-p {
+    font-size: 3.7rem;
+  }
+  .work-container .fa-code {
+    font-size: 3.1rem;
+  }
+  .GIT-card .form-title {
+    font-size: 2.3rem;
+  }
+  .GIT-card form {
+    font-size: 2rem;
+  }
+  .GIT-card form label,
+  .GIT-card form textarea,
+  .GIT-card form button,
+  .GIT-card form input {
+    font-size: 1.8rem;
+  }
 }
 
 body {
@@ -155,6 +190,7 @@ footer {
           justify-content: space-between;
   border-top: 3px solid black;
   margin-top: 3rem;
+  margin-bottom: 3rem;
   /* Links a secciones */
 }
 
@@ -193,7 +229,7 @@ footer .footer-social .footer-social__icons .fa-github,
 footer .footer-social .footer-social__icons .fa-linkedin {
   margin-top: 0.5rem;
   color: black;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-left: 1rem;
   background-color: white;
   padding: 0.5rem;
@@ -237,7 +273,7 @@ footer .footer-social .footer-social__icons .fa-linkedin {
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .work-container .work-title-container {
@@ -275,13 +311,10 @@ footer .footer-social .footer-social__icons .fa-linkedin {
 .work-container .work-title-container .work-title-texts .first-p {
   text-align: center;
   color: #000;
-  font-weight: 500;
-  font-size: 3rem;
 }
 
 .work-container .work-title-container .work-title-texts .fa-code {
   color: #000;
-  font-size: 2.5rem;
 }
 
 .work-container .cards-container {
@@ -696,42 +729,70 @@ footer .footer-social .footer-social__icons .fa-linkedin {
           transform: translateY(0);
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   nav {
-    height: 10rem;
-    background-color: transparent;
+    margin: 0;
   }
-  nav .logo-container {
-    margin-left: 2.5rem;
+  .title-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 5rem;
   }
-  nav .hamburger-btn {
-    display: none;
+  .work-container {
+    margin-bottom: 5rem;
   }
-  nav .nav-list {
-    position: relative;
-    height: 10rem;
-    top: 0;
-    background: none;
-    float: right;
-    text-align: right;
-    margin-right: 2.5rem;
-    -webkit-transition: none;
-    transition: none;
+  .work-container .work-title-container {
+    width: 50rem;
+    height: 12rem;
+    margin-bottom: 3rem;
   }
-  nav .nav-list li {
-    display: inline-block;
-    opacity: 1;
-    line-height: 10rem;
-    margin: 0 2rem;
-    -webkit-transition: none;
-    transition: none;
+  .work-container .work-title-container .work-title-texts {
+    height: 12rem;
+    width: 50rem;
   }
-  nav .nav-list li a {
-    color: #37485f;
+  .work-container .cards-container {
+    -ms-grid-columns: (320px)[2];
+        grid-template-columns: repeat(2, 320px);
+    -ms-grid-rows: (550px)[2];
+        grid-template-rows: repeat(2, 550px);
+    gap: 3rem;
   }
-  nav .nav-list li a.active,
-  nav .nav-list li a:hover {
-    color: black;
+  .aboutme-skills-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (320px)[2];
+        grid-template-columns: repeat(2, 320px);
+    gap: 3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 5rem;
+  }
+  .aboutme-skills-container .skills-card {
+    height: 27.6rem;
+  }
+  .GIT-container {
+    margin-bottom: 5rem;
+  }
+  .GIT-container .GIT-title {
+    width: 50rem;
+    height: 12rem;
+    margin-bottom: 3rem;
+  }
+  .GIT-container .GIT-title .GIT-title-texts {
+    width: 50rem;
+    height: 12rem;
+  }
+  .GIT-container .GIT-title .GIT-title-texts .first-p {
+    font-size: 3.7rem;
+  }
+  .GIT-container .GIT-title .GIT-title-texts .fa-envelope-circle-check {
+    font-size: 3.1rem;
+  }
+  .GIT-container .GIT-card {
+    width: 67rem;
+    padding: 4rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

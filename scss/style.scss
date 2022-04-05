@@ -45,6 +45,7 @@ footer {
   justify-content: space-between;
   border-top: 3px solid black;
   margin-top: 3rem;
+  margin-bottom: 3rem;
   /* Links a secciones */
   .footer-sections {
     height: auto;
@@ -73,7 +74,7 @@ footer {
       .fa-linkedin {
         margin-top: 0.5rem;
         color: black;
-        font-size: 4rem;
+        font-size: 3rem;
         margin-left: 1rem;
         background-color: white;
         padding: 0.5rem;
@@ -104,7 +105,7 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   .work-title-container {
     /* TITULO "MY WORK" + ICONO */
     width: 32rem;
@@ -131,12 +132,9 @@ footer {
       .first-p {
         text-align: center;
         color: #000;
-        font-weight: 500;
-        font-size: 3rem;
       }
       .fa-code {
         color: #000;
-        font-size: 2.5rem;
       }
     }
   }
@@ -162,7 +160,6 @@ footer {
       padding: 2.5rem 1.5rem;
       gap: 1.5rem;
       background-color: #fefffe;
-      
       img {
         width: 28rem;
         height: 17.6rem;
@@ -180,7 +177,6 @@ footer {
         font-weight: 500;
         text-align: justify;
       }
-
       .project-technologies {
         width: 28rem;
         .project-technologies--title {
@@ -206,7 +202,6 @@ footer {
           }
         }
       }
-
       .project-buttons {
         width: 28rem;
         display: flex;
@@ -437,39 +432,63 @@ footer {
     }
   }
 }
-@media only screen and (min-width: 900px) {
-  nav {
-    height: 10rem;
-    background-color: transparent;
-    .logo-container {
-      margin-left: 2.5rem;
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  nav{
+    margin: 0;
+  }
+  .title-container{
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  .work-container{
+    margin-bottom: 5rem;
+    .work-title-container{
+      width: 50rem;
+      height: 12rem;
+      margin-bottom: 3rem;
+      .work-title-texts{
+        height: 12rem;
+        width: 50rem;
+      }
     }
-    .hamburger-btn {
-      display: none;
+    .cards-container{
+      grid-template-columns: repeat(2, 320px);
+      grid-template-rows: repeat(2, 550px);
+      gap: 3rem;
     }
-    .nav-list {
-      position: relative;
-      height: 10rem;
-      top: 0;
-      background: none;
-      float: right;
-      text-align: right;
-      margin-right: 2.5rem;
-      transition: none;
-      li {
-        display: inline-block;
-        opacity: 1;
-        line-height: 10rem;
-        margin: 0 2rem;
-        transition: none;
-        a {
-          color: #37485f;
-        }
-        a.active,
-        a:hover {
-          color: black;
-        }
+
+  }
+  .aboutme-skills-container{
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    gap: 3rem;
+    justify-content: center;
+    .skills-card{
+      height: 27.6rem;
+    }
+    margin-bottom: 5rem;
+ }
+ .GIT-container{
+  margin-bottom: 5rem;
+  .GIT-title{
+    width: 50rem;
+    height: 12rem;
+    margin-bottom: 3rem;
+    .GIT-title-texts{
+      width: 50rem;
+      height: 12rem;
+      .first-p{
+        font-size: 3.7rem;
+      }
+      .fa-envelope-circle-check{
+        font-size: 3.1rem;
       }
     }
   }
+  .GIT-card{
+    width: 67rem;
+    padding: 4rem;
+    
+  }
+ }
 }
