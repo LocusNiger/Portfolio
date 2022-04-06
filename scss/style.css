@@ -103,6 +103,7 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
+/* TABLET / LAPTOP */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .title-container h2, .title-container h3 {
     font-size: 5rem;
@@ -735,9 +736,13 @@ footer .footer-social .footer-social__icons .fa-linkedin {
           transform: translateY(0);
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+/* TABLET / LAPTOP */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
   nav {
     margin: 0;
+  }
+  footer {
+    margin-bottom: 0;
   }
   footer .footer-sections {
     width: 33.5rem;
@@ -812,6 +817,15 @@ footer .footer-social .footer-social__icons .fa-linkedin {
   .GIT-container .GIT-card {
     width: 67rem;
     padding: 4rem;
+  }
+}
+
+/* PC */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .title-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

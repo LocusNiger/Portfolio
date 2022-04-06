@@ -79,7 +79,6 @@ footer {
     }
   }
 }
-
 /* Contenedor de los titulos al inicio de la página */
 .title-container {
   display: flex;
@@ -427,11 +426,13 @@ footer {
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+/* TABLET / LAPTOP */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
   nav{
     margin: 0;
   }
   footer{
+    margin-bottom: 0;
     .footer-sections{
       width: 33.5rem;
       height: auto;
@@ -503,4 +504,11 @@ footer {
     
   }
  }
+}
+
+/* PC */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .title-container{
+    align-items: center;
+  }
 }
