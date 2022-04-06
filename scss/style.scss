@@ -53,12 +53,6 @@ footer {
     li {
       margin: 0.5rem 0;
     }
-    a {
-      font-weight: 300;
-      color: black;
-      text-decoration: none;
-      font-size: 1.6rem;
-    }
   }
   .footer-social {
     height: auto;
@@ -432,9 +426,27 @@ footer {
     }
   }
 }
+
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   nav{
     margin: 0;
+  }
+  footer{
+    .footer-sections{
+      width: 33.5rem;
+      height: auto;
+      padding-left: 2.5rem;
+    }
+    .footer-social{
+      width: 33.5rem;
+      padding-right: 2.5rem;
+      .footer-social__icons{
+        .fa-github,
+        .fa-linkedin{
+        font-size: 3.8rem;
+        }
+      }
+    }
   }
   .title-container{
     align-items: center;

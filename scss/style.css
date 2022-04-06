@@ -68,6 +68,13 @@ body {
   margin-bottom: 1rem;
 }
 
+.footer-sections .footer-link {
+  font-weight: 300;
+  color: black;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
 .GIT-card .form-title {
   font-weight: 500;
   font-size: 2rem;
@@ -123,6 +130,12 @@ body {
   .GIT-card form button,
   .GIT-card form input {
     font-size: 1.8rem;
+  }
+  .footer-sections .footer-link {
+    font-size: 2rem;
+  }
+  .footer-title {
+    font-size: 2rem;
   }
 }
 
@@ -201,13 +214,6 @@ footer .footer-sections {
 
 footer .footer-sections li {
   margin: 0.5rem 0;
-}
-
-footer .footer-sections a {
-  font-weight: 300;
-  color: black;
-  text-decoration: none;
-  font-size: 1.6rem;
 }
 
 footer .footer-social {
@@ -732,6 +738,19 @@ footer .footer-social .footer-social__icons .fa-linkedin {
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   nav {
     margin: 0;
+  }
+  footer .footer-sections {
+    width: 33.5rem;
+    height: auto;
+    padding-left: 2.5rem;
+  }
+  footer .footer-social {
+    width: 33.5rem;
+    padding-right: 2.5rem;
+  }
+  footer .footer-social .footer-social__icons .fa-github,
+  footer .footer-social .footer-social__icons .fa-linkedin {
+    font-size: 3.8rem;
   }
   .title-container {
     -webkit-box-align: center;
