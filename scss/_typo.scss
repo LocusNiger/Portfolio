@@ -116,3 +116,57 @@
     font-size: 2rem;
   }
 }
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+  .title-container{
+    h2,h3{
+      font-size: 5rem;
+    }
+    p{
+      font-size: 4rem;
+    }
+    span{
+      font-size: 3.2rem;
+    }
+  }
+  .title-container{
+    h2,h3{
+      font-size: 5rem;
+    }
+    p{
+      font-size: 4rem;
+    }
+    span{
+      font-size: 3.2rem;
+    }
+  }
+  .work-container{
+    .first-p{
+      font-size: 3.7rem;
+    }
+    .fa-code{
+      font-size: 3.1rem;
+    }
+  }
+  .GIT-card{
+    .form-title{
+      font-size: 2.3rem;
+    } 
+    form{
+      font-size: 2rem;
+      label,
+      textarea,
+      button,
+      input{
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .footer-sections{
+    .footer-link{
+      font-size: 2rem;
+    }
+  }
+  .footer-title {
+    font-size: 2rem;
+  }
+}

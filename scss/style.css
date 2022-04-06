@@ -140,6 +140,55 @@ body {
   }
 }
 
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+  .title-container h2, .title-container h3 {
+    font-size: 5rem;
+  }
+  .title-container p {
+    font-size: 4rem;
+  }
+  .title-container span {
+    font-size: 3.2rem;
+  }
+  .title-container h2, .title-container h3 {
+    font-size: 5rem;
+  }
+  .title-container p {
+    font-size: 4rem;
+  }
+  .title-container span {
+    font-size: 3.2rem;
+  }
+  .work-container .first-p {
+    font-size: 3.7rem;
+  }
+  .work-container .fa-code {
+    font-size: 3.1rem;
+  }
+  .GIT-card .form-title {
+    font-size: 2.3rem;
+  }
+  .GIT-card form {
+    font-size: 2rem;
+  }
+  .GIT-card form label,
+  .GIT-card form textarea,
+  .GIT-card form button,
+  .GIT-card form input {
+    font-size: 1.8rem;
+  }
+  .footer-sections .footer-link {
+    font-size: 2rem;
+  }
+  .footer-title {
+    font-size: 2rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #b2e0bd;
 }
@@ -818,14 +867,112 @@ footer .footer-social .footer-social__icons .fa-linkedin {
     width: 67rem;
     padding: 4rem;
   }
+  .GIT-container .GIT-card .form-container form textarea {
+    padding: 1rem;
+  }
 }
 
 /* PC */
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+  nav {
+    margin: 0;
+  }
+  footer {
+    margin-bottom: 5rem;
+  }
+  footer .footer-sections {
+    width: 33.5rem;
+    height: auto;
+    padding-left: 2.5rem;
+  }
+  footer .footer-social {
+    width: 33.5rem;
+    padding-right: 2.5rem;
+  }
+  footer .footer-social .footer-social__icons .fa-github,
+  footer .footer-social .footer-social__icons .fa-linkedin {
+    font-size: 3.8rem;
+  }
   .title-container {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 5rem;
+  }
+  .work-container {
+    margin-bottom: 3rem;
+  }
+  .work-container .work-title-container {
+    width: 50rem;
+    height: 12rem;
+    margin-bottom: 3rem;
+  }
+  .work-container .work-title-container .work-title-texts {
+    height: 12rem;
+    width: 50rem;
+  }
+  .work-container .cards-container {
+    -ms-grid-columns: (370px)[2];
+        grid-template-columns: repeat(2, 370px);
+    -ms-grid-rows: (550px)[2];
+        grid-template-rows: repeat(2, 550px);
+    gap: 3rem;
+  }
+  .aboutme-skills-container {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 1.7rem;
+    -ms-grid-columns: (370px)[2];
+        grid-template-columns: repeat(2, 370px);
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+  .aboutme-skills-container .about-me-title {
+    width: 37rem;
+  }
+  .aboutme-skills-container .about-me-title .about-me-title-texts {
+    width: 37rem;
+  }
+  .aboutme-skills-container .skills-title {
+    width: 37rem;
+  }
+  .aboutme-skills-container .skills-title .skills-title-texts {
+    width: 37rem;
+  }
+  .aboutme-skills-container .about-me-card {
+    width: 100%;
+    height: 27.6rem;
+  }
+  .aboutme-skills-container .skills-card {
+    width: 100%;
+    height: 27.6rem;
+  }
+  .GIT-container {
+    margin-bottom: 3rem;
+  }
+  .GIT-container .GIT-title {
+    width: 50rem;
+    height: 12rem;
+  }
+  .GIT-container .GIT-title .GIT-title-texts {
+    width: 50rem;
+    height: 12rem;
+  }
+  .GIT-container .GIT-title .GIT-title-texts .first-p {
+    font-size: 3.7rem;
+  }
+  .GIT-container .GIT-title .GIT-title-texts .fa-envelope-circle-check {
+    font-size: 3.1rem;
+  }
+  .GIT-container .GIT-card {
+    width: 77rem;
+    padding: 4rem;
+  }
+  .GIT-container .GIT-card .form-container form textarea {
+    padding: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
