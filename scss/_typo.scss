@@ -31,6 +31,15 @@
   .fa-code{
     font-size: 2.5rem;
   }
+  .project-description{
+    a{
+      text-decoration: none;
+      color: #000;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
 }
 .footer-title {
   font-size: 1.6rem;
@@ -91,6 +100,15 @@
     }
     .fa-code{
       font-size: 3.1rem;
+    }
+    .project-description{
+      a{
+        text-decoration: none;
+        color: #000;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
     }
   }
   .GIT-card{
