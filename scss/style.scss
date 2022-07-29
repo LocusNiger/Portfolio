@@ -2,7 +2,7 @@
 @import "layout";
 @import "typo";
 
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -20,7 +20,7 @@ nav {
   .logo-container {
     align-self: center;
     margin-bottom: 4rem;
-    .logo{
+    .logo {
       width: 10rem;
     }
   }
@@ -92,7 +92,7 @@ footer {
   height: 22rem;
   height: auto;
   top: 0;
-  margin-bottom: 10rem;
+  margin-bottom: 20rem;
 }
 /* Proyectos */
 .work-container {
@@ -282,7 +282,7 @@ footer {
       text-align: justify;
       margin-bottom: 1rem;
     }
-    .spancito{
+    .spancito {
       color: #000;
       font-size: 1.6rem;
       font-weight: 500;
@@ -435,82 +435,81 @@ footer {
 
 /* TABLET / LAPTOP */
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
-  nav{
+  nav {
     margin: 0;
   }
-  footer{
+  footer {
     margin-bottom: 0;
-    .footer-sections{
+    .footer-sections {
       width: 33.5rem;
       height: auto;
       padding-left: 2.5rem;
     }
-    .footer-social{
+    .footer-social {
       width: 33.5rem;
       padding-right: 2.5rem;
-      .footer-social__icons{
+      .footer-social__icons {
         .fa-github,
-        .fa-linkedin{
-        font-size: 3.8rem;
+        .fa-linkedin {
+          font-size: 3.8rem;
         }
       }
     }
   }
-  .title-container{
+  .title-container {
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 20rem;
   }
-  .work-container{
+  .work-container {
     margin-bottom: 5rem;
-    .work-title-container{
+    .work-title-container {
       width: 50rem;
       height: 12rem;
       margin-bottom: 3rem;
-      .work-title-texts{
+      .work-title-texts {
         height: 12rem;
         width: 50rem;
       }
     }
-    .cards-container{
+    .cards-container {
       grid-template-columns: repeat(2, 320px);
       grid-template-rows: repeat(2, 550px);
       gap: 3rem;
     }
-
   }
-  .aboutme-skills-container{
+  .aboutme-skills-container {
     display: grid;
     grid-template-columns: repeat(2, 320px);
     gap: 3rem;
     justify-content: center;
-    .skills-card{
+    .skills-card {
       height: 27.6rem;
     }
     margin-bottom: 5rem;
   }
-  .GIT-container{
+  .GIT-container {
     margin-bottom: 5rem;
-    .GIT-title{
+    .GIT-title {
       width: 50rem;
       height: 12rem;
       margin-bottom: 3rem;
-      .GIT-title-texts{
+      .GIT-title-texts {
         width: 50rem;
         height: 12rem;
-        .first-p{
-        font-size: 3.7rem;
+        .first-p {
+          font-size: 3.7rem;
         }
-        .fa-envelope-circle-check{
-        font-size: 3.1rem;
+        .fa-envelope-circle-check {
+          font-size: 3.1rem;
         }
       }
     }
-    .GIT-card{
+    .GIT-card {
       width: 67rem;
       padding: 4rem;
-      .form-container{
-        form{
-          textarea{
+      .form-container {
+        form {
+          textarea {
             padding: 1rem;
           }
         }
@@ -521,103 +520,101 @@ footer {
 
 /* PC */
 @media only screen and (min-width: 1025px) and (max-width: 1600px) {
-  nav{
+  nav {
     margin: 0;
   }
-  footer{
+  footer {
     margin-bottom: 5rem;
-    .footer-sections{
+    .footer-sections {
       width: 33.5rem;
       height: auto;
       padding-left: 2.5rem;
     }
-    .footer-social{
+    .footer-social {
       width: 33.5rem;
       padding-right: 2.5rem;
-      .footer-social__icons{
+      .footer-social__icons {
         .fa-github,
-        .fa-linkedin{
-        font-size: 3.8rem;
+        .fa-linkedin {
+          font-size: 3.8rem;
         }
       }
     }
   }
-  .title-container{
+  .title-container {
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 20rem;
   }
-  .work-container{
-    margin-bottom: 3rem;
-    .work-title-container{
+  .work-container {
+    .work-title-container {
       width: 50rem;
       height: 12rem;
       margin-bottom: 3rem;
-      .work-title-texts{
+      .work-title-texts {
         height: 12rem;
         width: 50rem;
       }
     }
-    .cards-container{
+    .cards-container {
       grid-template-columns: repeat(2, 370px);
       grid-template-rows: repeat(2, 550px);
       gap: 3rem;
     }
   }
-  .aboutme-skills-container{
+  .aboutme-skills-container {
     display: grid;
     justify-content: center;
     margin-left: 1.7rem;
     grid-template-columns: repeat(2, 370px);
     gap: 3rem;
     margin-bottom: 3rem;
-    .about-me-title{
+    .about-me-title {
       width: 37rem;
-      .about-me-title-texts{
+      .about-me-title-texts {
         width: 37rem;
       }
     }
-    .skills-title{
+    .skills-title {
       width: 37rem;
-      .skills-title-texts{
+      .skills-title-texts {
         width: 37rem;
       }
     }
-    .about-me-card{
+    .about-me-card {
       width: 100%;
       height: 27.6rem;
     }
-    .skills-card{
+    .skills-card {
       width: 100%;
       height: 27.6rem;
     }
   }
-  .GIT-container{
+  .GIT-container {
     margin-bottom: 3rem;
-    .GIT-title{
+    .GIT-title {
       width: 50rem;
       height: 12rem;
-      .GIT-title-texts{
+      .GIT-title-texts {
         width: 50rem;
         height: 12rem;
-        .first-p{
-        font-size: 3.7rem;
+        .first-p {
+          font-size: 3.7rem;
         }
-        .fa-envelope-circle-check{
-        font-size: 3.1rem;
+        .fa-envelope-circle-check {
+          font-size: 3.1rem;
         }
       }
     }
-    .GIT-card{
+    .GIT-card {
       width: 77rem;
       padding: 4rem;
-      .form-container{
-        form{
-          textarea{
+      .form-container {
+        form {
+          textarea {
             padding: 1rem;
           }
         }
       }
     }
-
   }
 }
